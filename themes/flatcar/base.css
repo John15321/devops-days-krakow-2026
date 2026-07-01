@@ -1,0 +1,132 @@
+/* @theme flatcar-base
+ *
+ * Palette + default content slide (white background, navy title bar
+ * with Flatcar logo, body text). Imported by the main `flatcar`
+ * theme — not intended to be used standalone.
+ */
+
+:root {
+  --bg-navy:     #12172B;
+  --accent-cyan: #09BAC8;
+  --ink:         #12172B;
+  --paper:       #FFFFFF;
+  --muted:       #7A87A0;
+}
+
+section {
+  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 124px 70px 70px 70px;
+  font-size: 24px;
+  line-height: 1.45;
+  justify-content: flex-start;
+  align-items: stretch;
+  position: relative;
+}
+
+/* Default top title bar — overridden to position:static by every
+ * non-default layout in `dark.css` / `sidebar.css`. */
+section h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--bg-navy);
+  color: var(--accent-cyan);
+  margin: 0;
+  padding: 22px 70px;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  background-image: url('assets/flatcar-logo.svg');
+  background-repeat: no-repeat;
+  background-position: right 28px center;
+  background-size: 120px 120px;
+}
+
+section h2 {
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 26px;
+  margin-top: 0;
+}
+
+section ul, section ol { padding-left: 1.2em; }
+section li { margin: 0.25em 0; }
+section li::marker { color: var(--accent-cyan); }
+
+section strong { color: var(--ink); font-weight: 600; }
+section a      { color: var(--accent-cyan); text-decoration: none; }
+
+section table { border-collapse: collapse; margin: 0.6em 0; }
+section th, section td {
+  border: none;
+  padding: 8px 16px 8px 0;
+  vertical-align: top;
+}
+section th {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.9em;
+  text-align: left;
+  border-bottom: 1px solid var(--accent-cyan);
+}
+
+section code {
+  font-family: 'Cascadia Mono', 'Cascadia Code', ui-monospace, Menlo, Consolas,
+               'DejaVu Sans Mono', 'Liberation Mono', monospace;
+  font-weight: 500;
+  background: #F1F2F6;
+  color: var(--ink);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.95em;
+}
+section pre {
+  background: #F1F2F6;
+  border-left: 4px solid var(--accent-cyan);
+  padding: 16px 20px;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.9em;
+  line-height: 1.45;
+}
+section pre code { background: none; padding: 0; font-weight: 500; }
+
+/* highlight.js token colors (Flatcar palette) — works for any
+ * language Marp CLI can detect: ```cpp, ```python, ```rust,
+ * ```go, ```yaml, ```json, ```bash, ```typescript, etc. */
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-section,
+.hljs-link,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class    { color: #0077A8; font-weight: 600; }
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-regexp,
+.hljs-addition          { color: #12766A; }
+.hljs-number,
+.hljs-quote,
+.hljs-template-variable { color: #9A3F00; }
+.hljs-comment,
+.hljs-meta,
+.hljs-deletion          { color: var(--muted); font-style: italic; }
+.hljs-built_in,
+.hljs-type,
+.hljs-class .hljs-title,
+.hljs-title.class_,
+.hljs-title             { color: var(--ink); font-weight: 700; }
+.hljs-attr,
+.hljs-attribute,
+.hljs-variable,
+.hljs-params            { color: #0077A8; }
+.hljs-emphasis          { font-style: italic; }
+.hljs-strong            { font-weight: 700; }
+
+section::after  { color: var(--muted); font-size: 14px; font-weight: 400; }
+section footer  { color: var(--muted); font-size: 13px; bottom: 22px; left: 70px; }

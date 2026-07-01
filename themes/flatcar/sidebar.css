@@ -1,0 +1,226 @@
+/* @theme flatcar-sidebar
+ *
+ * Rail layouts: `sidebar` (33%), `sidebar whoami` (bio variant),
+ * `agenda` (25%). Imported by the main `flatcar` theme.
+ */
+
+/* ---------------- SHARED: SIDEBAR / AGENDA ----------------
+ * Both layouts share a navy left rail with a cyan title; the
+ * difference is rail width (33% vs 25%) and right-pane content style.
+ * Note: `section:is(.foo)` form (no space, no nested `section`) because
+ * Marpit auto-prefixes selectors that don't start with `section`. */
+section:is(.sidebar, .agenda) {
+  background-color: var(--paper);
+  background-image: linear-gradient(var(--bg-navy), var(--bg-navy));
+  background-repeat: no-repeat;
+  background-position: left top;
+  position: relative;
+  color: var(--ink);
+}
+section:is(.sidebar, .agenda) h1 {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  background-image: none;
+  color: var(--accent-cyan);
+  font-weight: 700;
+}
+
+/* ---------------- SIDEBAR (33% rail + free-form right pane) ---------------- */
+section.sidebar {
+  background-size: 33% 100%;
+  padding: 60px 60px 60px calc(33% + 60px);
+  display: block;
+  /* Override Marp default's `safe center center` so content reads top-down. */
+  place-content: start start;
+}
+section.sidebar > *:not(h1) { margin-top: 0; }
+section.sidebar > * + *     { margin-top: 14px; }
+
+section.sidebar h1 {
+  width: calc(33% - 80px);
+  font-size: 44px;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+section.sidebar h2 {
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 28px;
+  margin: 0 0 18px 0;
+}
+section.sidebar :is(p, ul, ol, table, pre):first-of-type {
+  margin-top: 0;
+}
+section.sidebar::after { color: var(--muted); }
+
+/* Borderless typographic tables in sidebar right pane. */
+section.sidebar table {
+  width: 100%;
+  margin: 0 0 12px 0;
+  border-collapse: collapse;
+  background: transparent;
+}
+section.sidebar :is(tr, th, td) {
+  background: transparent !important;
+  border: none !important;
+}
+section.sidebar th {
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 24px;
+  text-align: left;
+  padding: 4px 24px 10px 0;
+  border-bottom: 2px solid var(--ink) !important;
+}
+section.sidebar td {
+  color: var(--ink);
+  font-size: 24px;
+  padding: 8px 24px 8px 0;
+  vertical-align: top;
+}
+
+/* Diagrams / illustrations dropped into the right pane. */
+section.sidebar > img,
+section.sidebar > p > img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: contain;
+  margin: 8px 0;
+}
+
+/* ---------------- SIDEBAR.whoami (bio variant) ----------------
+ * Slide markup uses raw HTML for the bio fixtures:
+ *   <img class="bio-photo" ...>
+ *   <p class="bio-github">...</p>
+ *   <div class="bio-logos">...</div>
+ */
+section.sidebar.whoami {
+  /* Right pane has a short bio — center it vertically so it aligns
+   * with the photo in the navy rail. */
+  place-content: center start;
+}
+section.sidebar.whoami h1 {
+  font-size: 56px;
+  letter-spacing: -0.01em;
+}
+section.sidebar.whoami h2 {
+  font-size: 52px;
+  font-weight: 700;
+  margin: 0 0 24px 0;
+  max-width: 90%;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+section.sidebar.whoami :is(p, li) {
+  font-size: 32px;
+  line-height: 1.4;
+}
+section.sidebar.whoami ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 18px 0;
+}
+section.sidebar.whoami ul li {
+  padding-left: 14px;
+  position: relative;
+}
+section.sidebar.whoami ul li::before {
+  content: '-';
+  position: absolute;
+  left: 0;
+  color: var(--ink);
+}
+
+/* Photo: centred in the 33% rail, lower-middle vertically. */
+section.sidebar.whoami img.bio-photo {
+  position: absolute;
+  left: calc(16.5% - 110px);
+  top: 280px;
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* GitHub handle: white text + icon, bottom of navy rail. */
+section.sidebar.whoami p.bio-github {
+  position: absolute;
+  left: 60px;
+  bottom: 50px;
+  width: calc(33% - 120px);
+  margin: 0;
+  color: var(--paper);
+  font-size: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+section.sidebar.whoami p.bio-github img {
+  width: 34px;
+  height: 34px;
+}
+
+/* Logo row: top-right of the white pane. */
+section.sidebar.whoami div.bio-logos {
+  position: absolute;
+  top: 60px;
+  right: 60px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+section.sidebar.whoami div.bio-logos img {
+  height: 74px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* ---------------- AGENDA (25% rail + bullet list) ---------------- */
+section.agenda {
+  background-size: 25% 100%;
+  padding: 0;
+}
+section.agenda h1 {
+  font-size: 56px;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+  white-space: nowrap;
+}
+section.agenda :is(ul, ol) {
+  position: absolute;
+  top: 60px;
+  left: calc(25% + 60px);
+  right: 60px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--ink);
+  font-size: 28px;
+  line-height: 1.7;
+}
+section.agenda li {
+  margin: 0.1em 0;
+  padding-left: 1.4em;
+  position: relative;
+}
+section.agenda li::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent-cyan);
+  font-size: 1em;
+  line-height: 1.7;
+}
+section.agenda::after { color: var(--muted); }

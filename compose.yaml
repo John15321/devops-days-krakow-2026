@@ -1,0 +1,14 @@
+services:
+  slides-builder:
+    build:
+      context: .
+      dockerfile: Containerfile
+    image: slides-builder:local
+    container_name: slides-builder
+    volumes:
+      # Mount the entire project directory
+      - .:/slides
+    working_dir: /slides
+    # Keep stdin open and allocate TTY for interactive use
+    stdin_open: true
+    tty: true
