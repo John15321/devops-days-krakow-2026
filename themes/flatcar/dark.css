@@ -76,7 +76,7 @@ section.cover {
   align-items: flex-start;
 }
 section.cover h1 {
-  background-image: url('assets/logos/icon/color/flatcar-icon-color.svg');
+  background-image: url('assets/logos/flatcar-logotype/icon/color/flatcar-icon-color.svg');
   background-repeat: no-repeat;
   background-position: left top;
   background-size: 110px auto;

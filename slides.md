@@ -23,14 +23,14 @@ author: Jan Bronicki
 # whoami
 
 <div class="bio-logos">
-  <img src="assets/logos/icon/color/flatcar-icon-color.png" alt="Flatcar">
+  <img src="assets/logos/flatcar-logotype/icon/color/flatcar-icon-color.png" alt="Flatcar">
 </div>
 
 ## Jan Bronicki
 
 Flatcar Maintainer
 
-<img class="bio-photo" src="assets/photo/jan-bronicki.jpg" alt="Jan Bronicki">
+<img class="bio-photo" src="assets/photo/individual_photos/jan-bronicki.jpg" alt="Jan Bronicki">
 
 <p class="bio-github"><img src="assets/logos/external/github-white.png" alt="GitHub">@John15321</p>
 
@@ -106,7 +106,7 @@ version: 1.0.0
 # Thank you!
 
 <p class="closing-links">
-  <a href="https://flatcar.org"><img src="assets/logos/icon/white/flatcar-icon-white.svg" alt=""> flatcar.org</a>
+  <a href="https://flatcar.org"><img src="assets/logos/flatcar-logotype/icon/white/flatcar-icon-white.svg" alt=""> flatcar.org</a>
   <a href="https://github.com/flatcar"><img src="assets/logos/external/github-white.png" alt=""> github.com/flatcar</a>
   <a href="https://discord.gg/PMYjFUsJyq"><img src="assets/logos/external/discord-white.svg" alt=""> discord.gg/PMYjFUsJyq</a>
 </p>
