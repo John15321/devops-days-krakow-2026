@@ -22,15 +22,19 @@ author: Jan Bronicki
 
 # whoami
 
-<div class="bio-logos">
-  <img src="assets/logos/flatcar-logotype/icon/color/flatcar-icon-color.png" alt="Flatcar">
+<div class="pin-tr" style="display: flex; gap: 20px; align-items: center">
+  <img class="img-h-xs" src="./assets/logos/external/flatcar-logo-other.png" alt="Flatcar">
+  <img class="img-h-xs" src="./assets/logos/external/microsoft.png" alt="Microsoft">
 </div>
+
 
 ## Jan Bronicki
 
 Flatcar Maintainer
 
-<img class="bio-photo" src="assets/photo/individual_photos/jan-bronicki.jpg" alt="Jan Bronicki">
+Software Engineer @ Microsoft
+
+<img class="bio-photo" style="--bio-photo-size: 320px; top: 180px" src="assets/photo/individual_photos/jan-bronicki.jpg" alt="Jan Bronicki">
 
 <p class="bio-github"><img src="assets/logos/external/github-white.png" alt="GitHub">@John15321</p>
 
@@ -64,6 +68,12 @@ Flatcar Maintainer
 - **Automatic atomic updates** — no in-place package upgrades
 - **Runs anywhere** — bare metal, all major clouds, edge
 - **CNCF Incubating project** since August 2024
+
+
+![pane-mbc](assets/logos/external/cncf-banner.png)
+
+
+
 
 ---
 

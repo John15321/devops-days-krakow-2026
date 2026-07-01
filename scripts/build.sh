@@ -33,8 +33,10 @@ if command -v marp > /dev/null 2>&1; then
 elif [ -x ./node_modules/.bin/marp ]; then
     MARP_CMD="./node_modules/.bin/marp"
 else
-    echo "ℹ️  marp not found locally — falling back to npx"
-    MARP_CMD="npx --yes @marp-team/marp-cli@latest"
+    # Last-resort fallback. Pinned to match devDependencies in package.json so
+    # `npx` uses its local cache and skips the registry "@latest" version check.
+    echo "ℹ️  marp not found locally — falling back to npx (pinned)"
+    MARP_CMD="npx --yes @marp-team/marp-cli@4.1.2"
 fi
 
 echo "Using: ${MARP_CMD}"

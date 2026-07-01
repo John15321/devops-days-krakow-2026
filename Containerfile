@@ -10,6 +10,19 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends bash make && \
     rm -rf /var/lib/apt/lists/*
 
+# The base image installs `marp` as the unprivileged `marp` user under
+# /home/marp/.npm-global/bin, which is NOT on root's PATH. Symlink it into
+# /usr/local/bin so `command -v marp` succeeds regardless of user; this
+# skips the slow `npx --yes @marp-team/marp-cli@latest` fallback in build.sh.
+RUN if [ -x /home/marp/.npm-global/bin/marp ]; then \
+      ln -sf /home/marp/.npm-global/bin/marp /usr/local/bin/marp; \
+    elif [ -x /usr/local/bin/marp ]; then \
+      : ; \
+    else \
+      npm install -g @marp-team/marp-cli; \
+    fi && \
+    marp --version
+
 WORKDIR /slides
 
 # Reset entrypoint (base image entrypoint is `marp`) so we can run scripts/shells
