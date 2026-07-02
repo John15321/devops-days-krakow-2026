@@ -8,13 +8,13 @@ vars: {
 classes: {
   step: {
     style: {
-      fill: "#FFFFFF"
+      fill: "transparent"
       stroke: "#12172B"
       stroke-width: 3
       font-color: "#12172B"
       font-size: 36
       border-radius: 14
-      shadow: true
+      shadow: false
       bold: true
     }
   }
@@ -31,8 +31,8 @@ classes: {
 
 direction: down
 
-config: "Declarative Configuration\n(Ignition, Butane)" { class: step }
-substrate: "Cloud · Virtualization · Bare Metal" { class: step }
+config: "Butane YAML\n(Declarative config)" { class: step }
+substrate: "Cloud · VM · Bare Metal" { class: step }
 containers: "Containers (Podman, K8s, systemd)" { class: step }
 
 config -> substrate: "provisions" { class: arrow }
