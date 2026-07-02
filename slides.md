@@ -85,11 +85,11 @@ Software Engineer @ Microsoft
 - Openwall **oss-security** non-disclosure list
 - Co-founders of the **UAPI Group**, cross-distro SIG for image-based Linux
 
-<div class="row row-center" style="margin-top: 24px; gap: 70px">
-  <img style="height: 200px; width: auto" src="assets/logos/external/gentoo-logo.png" alt="Gentoo">
-  <img style="height: 100px; width: auto" src="assets/logos/external/fedora-coreos-logo.svg" alt="Fedora CoreOS">
-  <img style="height: 200px; width: auto" src="assets/logos/external/systemd.png" alt="systemd">
-  <img style="height: 200px; width: auto" src="assets/logos/external/linux-logo.png" alt="Linux">
+<div class="logo-wall logo-wall-lg" style="grid-template-columns: repeat(4, 1fr); margin-top: 28px">
+  <img src="assets/logos/external/gentoo-logo.png" alt="Gentoo">
+  <img src="assets/logos/external/fedora-coreos-logo.svg" alt="Fedora CoreOS">
+  <img src="assets/logos/external/systemd.png" alt="systemd">
+  <img src="assets/logos/external/linux-logo.png" alt="Linux">
 </div>
 
 ---
@@ -98,27 +98,27 @@ Software Engineer @ Microsoft
 
 # Runs everywhere
 
-<div style="position: relative; width: 100%; height: 580px; margin-top: 4px">
-  <img style="position: absolute; left: 3%;  top: 2%;  max-height: 95px; filter: drop-shadow(0 6px 14px rgba(0,0,0,.18))" src="assets/logos/external/clouds/aws-logo.svg" alt="AWS">
-  <img style="position: absolute; left: 26%; top: 0%;  max-height: 95px; filter: drop-shadow(0 6px 14px rgba(0,0,0,.18))" src="assets/logos/external/clouds/azure.png" alt="Azure">
-  <img style="position: absolute; left: 48%; top: 3%;  max-height: 95px; filter: drop-shadow(0 6px 14px rgba(0,0,0,.18))" src="assets/logos/external/clouds/gcp.png" alt="GCP">
-  <img style="position: absolute; left: 72%; top: 1%;  max-height: 95px; filter: drop-shadow(0 6px 14px rgba(0,0,0,.18))" src="assets/logos/external/clouds/oracle-cloud-logo.png" alt="Oracle Cloud">
+<div class="logo-wall" style="grid-template-columns: repeat(5, 1fr); gap: 22px 28px">
+  <img src="assets/logos/external/clouds/aws-logo.svg" alt="AWS">
+  <img src="assets/logos/external/clouds/azure.png" alt="Azure">
+  <img src="assets/logos/external/clouds/gcp.png" alt="GCP">
+  <img src="assets/logos/external/clouds/oracle-cloud-logo.png" alt="Oracle Cloud">
+  <img src="assets/logos/external/clouds/openstack.png" alt="OpenStack">
 
-  <img style="position: absolute; left: 4%;  top: 22%; max-height: 90px; filter: drop-shadow(0 6px 14px rgba(0,0,0,.18))" src="assets/logos/external/clouds/stackit-logo.svg" alt="STACKIT">
-  <img style="position: absolute; left: 25%; top: 20%; max-height: 90px; filter: drop-shadow(0 6px 14px rgba(0,0,0,.18))" src="assets/logos/external/clouds/ovhcloud-seeklogo.svg" alt="OVHcloud">
-  <img style="position: absolute; left: 47%; top: 23%; max-height: 90px; filter: drop-shadow(0 6px 14px rgba(0,0,0,.18))" src="assets/logos/external/clouds/scaleway.png" alt="Scaleway">
-  <img style="position: absolute; left: 70%; top: 21%; max-height: 90px; filter: drop-shadow(0 6px 14px rgba(0,0,0,.18))" src="assets/logos/external/clouds/hetzner.png" alt="Hetzner">
+  <img src="assets/logos/external/clouds/stackit-logo.svg" alt="STACKIT">
+  <img src="assets/logos/external/clouds/ovhcloud-seeklogo.svg" alt="OVHcloud">
+  <img src="assets/logos/external/clouds/scaleway.png" alt="Scaleway">
+  <img src="assets/logos/external/clouds/hetzner.png" alt="Hetzner">
+  <img src="assets/logos/external/clouds/digitalocean.png" alt="DigitalOcean">
 
-  <img style="position: absolute; left: 3%;  top: 42%; max-height: 90px; filter: drop-shadow(0 6px 14px rgba(0,0,0,.18))" src="assets/logos/external/clouds/digitalocean.png" alt="DigitalOcean">
-  <img style="position: absolute; left: 24%; top: 44%; max-height: 90px; filter: drop-shadow(0 6px 14px rgba(0,0,0,.18))" src="assets/logos/external/clouds/akamai-logo.svg" alt="Akamai">
-  <img style="position: absolute; left: 46%; top: 41%; max-height: 90px; filter: drop-shadow(0 6px 14px rgba(0,0,0,.18))" src="assets/logos/external/clouds/exoscale-seeklogo.svg" alt="Exoscale">
-  <img style="position: absolute; left: 68%; top: 43%; max-height: 90px; filter: drop-shadow(0 6px 14px rgba(0,0,0,.18))" src="assets/logos/external/clouds/brightbox-logo.svg" alt="Brightbox">
-  <img style="position: absolute; left: 88%; top: 41%; max-height: 90px; filter: drop-shadow(0 6px 14px rgba(0,0,0,.18))" src="assets/logos/external/clouds/plusserver.png" alt="plusserver">
+  <img src="assets/logos/external/clouds/akamai-logo.svg" alt="Akamai">
+  <img src="assets/logos/external/clouds/exoscale-seeklogo.svg" alt="Exoscale">
+  <img src="assets/logos/external/clouds/brightbox-logo.svg" alt="Brightbox">
+  <img src="assets/logos/external/clouds/plusserver.png" alt="plusserver">
+  <img src="assets/logos/external/clouds/vmware.jpeg" alt="VMware">
 
-  <img style="position: absolute; left: 5%;  top: 64%; max-height: 90px; filter: drop-shadow(0 6px 14px rgba(0,0,0,.18))" src="assets/logos/external/clouds/openstack.png" alt="OpenStack">
-  <img style="position: absolute; left: 27%; top: 66%; max-height: 90px; filter: drop-shadow(0 6px 14px rgba(0,0,0,.18))" src="assets/logos/external/clouds/vmware.jpeg" alt="VMware">
-  <img style="position: absolute; left: 50%; top: 65%; max-height: 90px; filter: drop-shadow(0 6px 14px rgba(0,0,0,.18))" src="assets/logos/external/clouds/proxmox.png" alt="Proxmox">
-  <img style="position: absolute; left: 72%; top: 66%; max-height: 90px; filter: drop-shadow(0 6px 14px rgba(0,0,0,.18))" src="assets/logos/external/clouds/qemu.jpeg" alt="QEMU">
+  <img src="assets/logos/external/clouds/proxmox.png" alt="Proxmox">
+  <img src="assets/logos/external/clouds/qemu.jpeg" alt="QEMU">
 </div>
 
 ---
@@ -127,20 +127,20 @@ Software Engineer @ Microsoft
 
 # In production at
 
-<div style="position: relative; width: 100%; height: 560px; margin-top: 8px">
-  <img style="position: absolute; left: 2%;  top: 4%;  max-height: 130px; filter: drop-shadow(0 8px 18px rgba(0,0,0,.20))" src="assets/logos/external/companies/adobe.jpeg" alt="Adobe">
-  <img style="position: absolute; left: 28%; top: 0%;  max-height: 130px; filter: drop-shadow(0 8px 18px rgba(0,0,0,.20))" src="assets/logos/external/companies/atnt.png" alt="AT&T">
-  <img style="position: absolute; left: 52%; top: 5%;  max-height: 130px; filter: drop-shadow(0 8px 18px rgba(0,0,0,.20))" src="assets/logos/external/companies/deepl.png" alt="DeepL">
-  <img style="position: absolute; left: 76%; top: 2%;  max-height: 130px; filter: drop-shadow(0 8px 18px rgba(0,0,0,.20))" src="assets/logos/external/companies/giantswarm.png" alt="Giant Swarm">
+<div class="logo-wall logo-wall-lg" style="grid-template-columns: repeat(4, 1fr); gap: 40px 44px">
+  <img src="assets/logos/external/companies/adobe.jpeg" alt="Adobe">
+  <img src="assets/logos/external/companies/atnt.png" alt="AT&T">
+  <img src="assets/logos/external/companies/deepl.png" alt="DeepL">
+  <img src="assets/logos/external/companies/giantswarm.png" alt="Giant Swarm">
 
-  <img style="position: absolute; left: 4%;  top: 32%; max-height: 130px; filter: drop-shadow(0 8px 18px rgba(0,0,0,.20))" src="assets/logos/external/companies/stackit.png" alt="STACKIT">
-  <img style="position: absolute; left: 28%; top: 36%; max-height: 130px; filter: drop-shadow(0 8px 18px rgba(0,0,0,.20))" src="assets/logos/external/companies/qualys.png" alt="Qualys">
-  <img style="position: absolute; left: 52%; top: 34%; max-height: 130px; filter: drop-shadow(0 8px 18px rgba(0,0,0,.20))" src="assets/logos/external/companies/wipro.png" alt="Wipro">
-  <img style="position: absolute; left: 76%; top: 32%; max-height: 130px; filter: drop-shadow(0 8px 18px rgba(0,0,0,.20))" src="assets/logos/external/companies/equinix.png" alt="Equinix">
+  <img src="assets/logos/external/companies/stackit.png" alt="STACKIT">
+  <img src="assets/logos/external/companies/qualys.png" alt="Qualys">
+  <img src="assets/logos/external/companies/wipro.png" alt="Wipro">
+  <img src="assets/logos/external/companies/equinix.png" alt="Equinix">
 
-  <img style="position: absolute; left: 14%; top: 66%; max-height: 130px; filter: drop-shadow(0 8px 18px rgba(0,0,0,.20))" src="assets/logos/external/clouds/cloudbasesol-logo_hu_5371da61cf7b0047.webp" alt="Cloudbase Solutions">
-  <img style="position: absolute; left: 44%; top: 68%; max-height: 130px; filter: drop-shadow(0 8px 18px rgba(0,0,0,.20))" src="assets/logos/external/clouds/vmaccel_testimonial_hedgehog.jpg" alt="Hedgehog">
-  <img style="position: absolute; left: 66%; top: 66%; max-height: 130px; filter: drop-shadow(0 8px 18px rgba(0,0,0,.20))" src="assets/logos/external/clouds/cloudscale_hu_17df2ff04c9be12e.webp" alt="cloudscale.ch">
+  <img src="assets/logos/external/clouds/cloudbasesol-logo_hu_5371da61cf7b0047.webp" alt="Cloudbase Solutions">
+  <img src="assets/logos/external/clouds/vmaccel_testimonial_hedgehog.jpg" alt="Hedgehog">
+  <img src="assets/logos/external/clouds/cloudscale_hu_17df2ff04c9be12e.webp" alt="cloudscale.ch">
 </div>
 
 ---
