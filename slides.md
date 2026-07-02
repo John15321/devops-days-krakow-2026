@@ -261,9 +261,9 @@ Software Engineer @ Microsoft
 
 ---
 
-# Flatcar UX
+# Flatcar Workflow
 
-<div class="row row-center" style="gap: 24px; margin-top: 100px; flex-wrap: nowrap; align-items: center">
+<div class="row row-center" style="gap: 24px; margin: auto 0; flex-wrap: nowrap; align-items: center">
 
   <div style="flex: 1; padding: 32px 24px; border: 3px solid #12172B; border-radius: 14px; text-align: center; box-shadow: 6px 6px 0 #09BAC8; background: #FFFFFF">
     <div style="font-size: 30px; font-weight: 700">Butane YAML</div>
@@ -316,13 +316,18 @@ systemd:
 # Transpile Butane to an ignition config (JSON)
 $ butane -o config.ign config.bu
 
-# Boot Flatcar in QEMU with it applied
+# Boot Flatcar in QEMU with the config applied
 $ ./flatcar_production_qemu.sh -i config.ign
 ```
 
+
+<div class="callout">
+<code>-i config.ign</code> hands the config to Flatcar as <strong>user-data</strong>. Same channel AWS, Azure, GCP, and OpenStack use to provision any instance.
+</div>
+
 ---
 
-# …and after first boot
+# It came up serving
 
 ```console
 $ systemctl is-active nginx.service
@@ -334,7 +339,7 @@ Server: nginx/1.27.3
 Content-Type: text/html
 ```
 
-No SSH. No manual `docker run`. The machine came up already serving.
+No SSH. No manual `docker run`. The machine provisioned itself.
 
 ---
 
@@ -407,7 +412,6 @@ No SSH. No manual `docker run`. The machine came up already serving.
 
 ---
 
-<!-- _class: sidebar -->
 
 # Channels
 
@@ -428,41 +432,12 @@ No SSH. No manual `docker run`. The machine came up already serving.
 
 ---
 
-<!-- _class: sidebar -->
-
-# Come find us
-
-<div class="cols-2" style="align-items: start; gap: 32px">
-
-<div>
-
-**Online**
-
-- **flatcar.org**
-- **github.com/flatcar**
-- **Discord**
-
-</div>
-
-<div>
-
-**Meetings**
-
-- **Office hours**: 2nd Tuesday, 2:30pm UTC
-- **Dev Sync**: 4th Tuesday, 2:30pm UTC
-
-</div>
-
-</div>
-
-Jump in. First-time contributors welcome.
-
----
-
 <!-- _class: closing -->
 <!-- _paginate: false -->
 
 # Thank you!
+
+<p class="closing-qr-caption"><img src="assets/logos/external/discord-white.svg" alt=""> Join our Discord!</p>
 
 <p class="closing-links">
   <a href="https://flatcar.org"><img src="assets/logos/flatcar-logotype/icon/white/flatcar-icon-white.svg" alt=""> flatcar.org</a>
@@ -470,4 +445,9 @@ Jump in. First-time contributors welcome.
   <a href="https://discord.gg/PMYjFUsJyq"><img src="assets/logos/external/discord-white.svg" alt=""> discord.gg/PMYjFUsJyq</a>
 </p>
 
-*Questions?*
+<p class="closing-meetings">
+  <span><strong>Office hours</strong> · 2nd Tue, 14:30 UTC</span>
+  <span><strong>Dev sync</strong> · 4th Tue, 14:30 UTC</span>
+</p>
+
+<p class="closing-cta"><strong>Everyone welcome.</strong> Users, contributors, or just curious. Ask questions, get help, share what you're building.</p>
