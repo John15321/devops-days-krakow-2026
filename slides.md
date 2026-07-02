@@ -46,7 +46,7 @@ Software Engineer @ Microsoft
 
 - The community behind Flatcar
 - What Flatcar Container Linux actually is
-- The UX philosophy: functionality, not features
+- Provisioned, not installed
 - Immutable by design & A/B updates
 - Live demo
 
@@ -88,7 +88,7 @@ Software Engineer @ Microsoft
 <div class="logo-wall logo-wall-lg" style="grid-template-columns: repeat(4, 1fr); margin-top: 28px">
   <img src="assets/logos/external/gentoo-logo.png" alt="Gentoo">
   <img src="assets/logos/external/fedora-coreos-logo.svg" alt="Fedora CoreOS">
-  <img src="assets/logos/external/systemd.png" alt="systemd">
+  <img src="assets/logos/external/clouds/Systemd-logo.svg" alt="systemd">
   <img src="assets/logos/external/linux-logo.png" alt="Linux">
 </div>
 
@@ -98,7 +98,7 @@ Software Engineer @ Microsoft
 
 # Runs everywhere
 
-<div class="logo-wall" style="grid-template-columns: repeat(5, 1fr); gap: 22px 28px">
+<div class="logo-wall" style="grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(4, 1fr); gap: 20px 28px; height: 530px; margin-top: 8px">
   <img src="assets/logos/external/clouds/aws-logo.svg" alt="AWS">
   <img src="assets/logos/external/clouds/azure.png" alt="Azure">
   <img src="assets/logos/external/clouds/gcp.png" alt="GCP">
@@ -109,16 +109,19 @@ Software Engineer @ Microsoft
   <img src="assets/logos/external/clouds/ovhcloud-seeklogo.svg" alt="OVHcloud">
   <img src="assets/logos/external/clouds/scaleway.png" alt="Scaleway">
   <img src="assets/logos/external/clouds/hetzner.png" alt="Hetzner">
-  <img src="assets/logos/external/clouds/digitalocean.png" alt="DigitalOcean">
+  <img src="assets/logos/external/clouds/DigitalOcean_logo.svg" alt="DigitalOcean">
 
   <img src="assets/logos/external/clouds/akamai-logo.svg" alt="Akamai">
   <img src="assets/logos/external/clouds/exoscale-seeklogo.svg" alt="Exoscale">
   <img src="assets/logos/external/clouds/brightbox-logo.svg" alt="Brightbox">
-  <img src="assets/logos/external/clouds/plusserver.png" alt="plusserver">
-  <img src="assets/logos/external/clouds/vmware.jpeg" alt="VMware">
+  <img src="assets/logos/external/clouds/PlusServer-Logo.svg" alt="plusserver">
 
-  <img src="assets/logos/external/clouds/proxmox.png" alt="Proxmox">
-  <img src="assets/logos/external/clouds/qemu.jpeg" alt="QEMU">
+  <img src="assets/logos/external/clouds/Vmware.svg" alt="VMware">
+  <img src="assets/logos/external/clouds/Logo_Proxmox.svg" alt="Proxmox">
+  <img src="assets/logos/external/clouds/Qemu_logo.svg" alt="QEMU">
+  <img src="assets/logos/external/clouds/kube-virt.svg" alt="KubeVirt">
+  <img src="assets/logos/external/clouds/libvirt-logo.svg" alt="libvirt">
+  <img src="assets/logos/external/clouds/vagrant.svg" alt="Vagrant">
 </div>
 
 ---
@@ -127,20 +130,24 @@ Software Engineer @ Microsoft
 
 # In production at
 
-<div class="logo-wall logo-wall-lg" style="grid-template-columns: repeat(4, 1fr); gap: 40px 44px">
-  <img src="assets/logos/external/companies/adobe.jpeg" alt="Adobe">
+<div class="logo-wall logo-wall-lg" style="grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(3, 1fr); gap: 20px 32px; height: 530px; margin-top: 8px">
+  <img src="assets/logos/external/companies/Adobe_Corporate_logo.svg" alt="Adobe">
   <img src="assets/logos/external/companies/atnt.png" alt="AT&T">
   <img src="assets/logos/external/companies/deepl.png" alt="DeepL">
   <img src="assets/logos/external/companies/giantswarm.png" alt="Giant Swarm">
-
   <img src="assets/logos/external/companies/stackit.png" alt="STACKIT">
+
   <img src="assets/logos/external/companies/qualys.png" alt="Qualys">
   <img src="assets/logos/external/companies/wipro.png" alt="Wipro">
   <img src="assets/logos/external/companies/equinix.png" alt="Equinix">
+  <img src="assets/logos/external/companies/NAV_logo_rød.svg" alt="NAV">
+  <img src="assets/logos/external/companies/Finleap_idD9GhopR0_0.svg" alt="Finleap">
 
+  <img src="assets/logos/external/companies/Hedgehog-color-large.svg" alt="Hedgehog">
+  <img src="assets/logos/external/companies/digital-science-logo.svg" alt="Digital Science">
   <img src="assets/logos/external/clouds/cloudbasesol-logo_hu_5371da61cf7b0047.webp" alt="Cloudbase Solutions">
-  <img src="assets/logos/external/clouds/vmaccel_testimonial_hedgehog.jpg" alt="Hedgehog">
   <img src="assets/logos/external/clouds/cloudscale_hu_17df2ff04c9be12e.webp" alt="cloudscale.ch">
+  <img src="assets/logos/external/companies/alopeyk.png" alt="Alopeyk" style="max-height: 140px">
 </div>
 
 ---
@@ -193,58 +200,28 @@ Software Engineer @ Microsoft
 
 <!-- _class: sidebar -->
 
-# Functionality, not Features
-
-<div class="cols-2" style="align-items: start; gap: 40px; margin-top: 12px">
-
-<div>
-
-**General-purpose Linux**
-
-- Choose your shell, desktop, stack
-- Backports vs. new repos vs. waiting
-- Think about *features*
-- Build the system you want
-
-</div>
-
-<div>
-
-**Flatcar**
-
-- We choose for you. No pkg manager
-- Whole OS updates automatically
-- Think about *functionality*: does it work?
-- We deliver a light switch
-
-</div>
-
-</div>
-
----
-
-<!-- _class: sidebar -->
-
 # Provisioned, not Installed
 
 <div class="cols-2" style="align-items: start; gap: 40px; margin-top: 12px">
 
 <div>
 
-**Install**
+**Traditional install**
 
 - Interactive choices during setup
-- Each machine ends up a little different
+- Every machine ends up a little different
+- Manual updates, package churn, drift
 - The image and the config are one blob
 
 </div>
 
 <div>
 
-**Provision**
+**Flatcar: provisioned**
 
 - One declarative config, applied at boot
-- Every machine is identical
+- Every machine identical, reproducible
+- Whole-OS atomic updates, no drift
 - Same idea as containers
 
 </div>
@@ -281,7 +258,7 @@ Software Engineer @ Microsoft
 
   <div style="flex: 1; padding: 32px 24px; border: 3px solid #12172B; border-radius: 14px; text-align: center; box-shadow: 6px 6px 0 #09BAC8; background: #FFFFFF">
     <div style="font-size: 30px; font-weight: 700">Containers</div>
-    <div style="font-size: 20px; margin-top: 8px; opacity: 0.7">Podman · K8s · systemd</div>
+    <div style="font-size: 20px; margin-top: 8px; opacity: 0.7">Your runtime of choice</div>
   </div>
 
 </div>
@@ -312,7 +289,7 @@ systemd:
 
 # Boot it in a VM
 
-```console
+```bash
 # Transpile Butane to an ignition config (JSON)
 $ butane -o config.ign config.bu
 
@@ -322,7 +299,7 @@ $ ./flatcar_production_qemu.sh -i config.ign
 
 
 <div class="callout">
-<code>-i config.ign</code> hands the config to Flatcar as <strong>user-data</strong>. Same channel AWS, Azure, GCP, and OpenStack use to provision any instance.
+The config gets handed to Flatcar as <strong>user-data</strong>. Same channel every major cloud, hypervisor, and bare-metal provisioner uses to seed an instance.
 </div>
 
 ---
@@ -339,7 +316,7 @@ Server: nginx/1.27.3
 Content-Type: text/html
 ```
 
-No SSH. No manual `docker run`. The machine provisioned itself.
+No login. No post-boot setup. The machine came up already doing its job.
 
 ---
 
@@ -446,8 +423,8 @@ No SSH. No manual `docker run`. The machine provisioned itself.
 </p>
 
 <p class="closing-meetings">
-  <span><strong>Office hours</strong> · 2nd Tue, 14:30 UTC</span>
-  <span><strong>Dev sync</strong> · 4th Tue, 14:30 UTC</span>
+  <span><strong>Office hours</strong> · every 2nd Tue, 16:30 CEST</span>
+  <span><strong>Dev sync</strong> · every 4th Tue, 16:30 CEST</span>
 </p>
 
 <p class="closing-cta"><strong>Everyone welcome.</strong> Users, contributors, or just curious. Ask questions, get help, share what you're building.</p>
