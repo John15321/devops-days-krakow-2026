@@ -62,6 +62,22 @@ Software Engineer @ Microsoft
 
 <!-- _class: sidebar -->
 
+# Community stewarded
+
+- **Fully open, fully free:** Apache 2.0, public roadmap, public issue tracker
+- **No single owner:** the project and trademark belong to the CNCF and the Linux Foundation
+- **CNCF project:** neutral governance under the Cloud Native Computing Foundation
+- **You can join:** SIG meetings are public; anyone can propose changes or maintain
+
+<div class="cncf-banner">
+  <p class="cncf-banner-caption">Flatcar is a <strong>CNCF</strong> project</p>
+  <img src="assets/logos/external/cncf-banner.png" alt="Cloud Native Computing Foundation">
+</div>
+
+---
+
+<!-- _class: sidebar -->
+
 # The community
 
 <div style="position: relative; width: 100%; height: 620px; margin-top: 4px">
@@ -85,7 +101,7 @@ Software Engineer @ Microsoft
 - Openwall **oss-security** non-disclosure list
 - Co-founders of the **UAPI Group**, cross-distro SIG for image-based Linux
 
-<div class="logo-wall logo-wall-lg" style="grid-template-columns: repeat(4, 1fr); margin-top: 28px">
+<div class="logo-wall logo-wall-lg" style="grid-template-columns: repeat(4, 1fr); margin-top: 18px">
   <img src="assets/logos/external/gentoo-logo.png" alt="Gentoo">
   <img src="assets/logos/external/fedora-coreos-logo.svg" alt="Fedora CoreOS">
   <img src="assets/logos/external/clouds/Systemd-logo.svg" alt="systemd">
@@ -427,4 +443,4 @@ No login. No post-boot setup. The machine came up already doing its job.
   <span><strong>Dev sync</strong> · every 4th Tue, 16:30 CEST</span>
 </p>
 
-<p class="closing-cta"><strong>Everyone welcome.</strong> Users, contributors, or just curious. Ask questions, get help, share what you're building.</p>
+<p class="closing-cta"><strong>Everyone welcome.</strong> Users, contributors, or just curious. Ask questions, get help, share what you're building!</p>
