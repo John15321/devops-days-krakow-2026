@@ -6,8 +6,17 @@ FROM marpteam/marp-cli:latest
 USER root
 
 # Base image is Debian-based; bash is usually present, make is not.
+# We also install proper fonts so slide typography (Inter for body, JetBrains
+# Mono for code/version chips) renders consistently instead of falling back to
+# a generic bitmap font that Chromium synthesizes bold from (looks stretched).
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends bash make && \
+    apt-get install -y --no-install-recommends \
+      bash make fontconfig \
+      fonts-inter \
+      fonts-jetbrains-mono \
+      fonts-firacode \
+      fonts-noto-core && \
+    fc-cache -f && \
     rm -rf /var/lib/apt/lists/*
 
 # The base image installs `marp` as the unprivileged `marp` user under

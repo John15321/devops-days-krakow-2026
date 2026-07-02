@@ -46,7 +46,7 @@ Software Engineer @ Microsoft
 
 - The community behind Flatcar
 - What Flatcar Container Linux actually is
-- The UX philosophy — functionality, not features
+- The UX philosophy: functionality, not features
 - Immutable by design & A/B updates
 - Live demo
 
@@ -68,10 +68,10 @@ Software Engineer @ Microsoft
   <img style="position: absolute; left: -4%; top: -2%; width: 42%; box-shadow: 0 10px 26px rgba(0,0,0,.32)" src="assets/photo/group_photos/image13.jpeg" alt="">
   <img style="position: absolute; left: 50%; top: -4%; width: 46%; box-shadow: 0 10px 26px rgba(0,0,0,.32)" src="assets/photo/group_photos/image16.jpeg" alt="">
   <img style="position: absolute; left: 22%; top: 4%;  width: 42%; box-shadow: 0 10px 26px rgba(0,0,0,.32); z-index: 2" src="assets/photo/group_photos/image14.jpeg" alt="">
-  <img style="position: absolute; left: -8%; top: 44%; width: 42%; box-shadow: 0 10px 26px rgba(0,0,0,.32); z-index: 2" src="assets/photo/group_photos/image17.jpeg" alt="">
+  <img style="position: absolute; left: 0%; top: 40%; width: 42%; box-shadow: 0 10px 26px rgba(0,0,0,.32); z-index: 2" src="assets/photo/group_photos/image17.jpeg" alt="">
   <img style="position: absolute; left: 58%; top: 22%; width: 42%; box-shadow: 0 10px 26px rgba(0,0,0,.32); z-index: 2" src="assets/photo/group_photos/image18.jpeg" alt="">
   <img style="position: absolute; left: 18%; top: 22%; width: 52%; box-shadow: 0 14px 32px rgba(0,0,0,.38); z-index: 4" src="assets/photo/group_photos/image15.jpeg" alt="">
-  <img style="position: absolute; left: 32%; top: 56%; width: 48%; box-shadow: 0 12px 28px rgba(0,0,0,.34); z-index: 3" src="assets/photo/group_photos/image19.jpeg" alt="">
+  <img style="position: absolute; left: 42%; top: 54%; width: 54%; box-shadow: 0 12px 28px rgba(0,0,0,.34); z-index: 3" src="assets/photo/group_photos/image19.jpeg" alt="">
 </div>
 
 ---
@@ -83,7 +83,7 @@ Software Engineer @ Microsoft
 - **Gentoo** and **Fedora CoreOS**
 - **systemd**, **Dracut**, **Grub**, **Afterburn**
 - Openwall **oss-security** non-disclosure list
-- Co-founders of the **UAPI Group** — cross-distro SIG for image-based Linux
+- Co-founders of the **UAPI Group**, cross-distro SIG for image-based Linux
 
 <div class="row row-center" style="margin-top: 24px; gap: 70px">
   <img style="height: 200px; width: auto" src="assets/logos/external/gentoo-logo.png" alt="Gentoo">
@@ -212,9 +212,9 @@ Software Engineer @ Microsoft
 
 **Flatcar**
 
-- We choose for you — no pkg manager
+- We choose for you. No pkg manager
 - Whole OS updates automatically
-- Think about *functionality* — does it work?
+- Think about *functionality*: does it work?
 - We deliver a light switch
 
 </div>
@@ -270,14 +270,14 @@ Software Engineer @ Microsoft
     <div style="font-size: 20px; margin-top: 8px; opacity: 0.7">Declarative config</div>
   </div>
 
-  <div style="color: #09BAC8; font-size: 56px; font-weight: 700; flex-shrink: 0">→</div>
+  <div style="flex-shrink: 0; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 40 40" style="width: 64px; height: 64px" xmlns="http://www.w3.org/2000/svg"><path d="M 6 20 L 30 20 M 22 12 L 30 20 L 22 28" stroke="#09BAC8" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
 
   <div style="flex: 1; padding: 32px 24px; border: 3px solid #12172B; border-radius: 14px; text-align: center; box-shadow: 6px 6px 0 #09BAC8; background: #FFFFFF">
     <div style="font-size: 26px; font-weight: 700">Cloud · VM · Bare Metal</div>
     <div style="font-size: 20px; margin-top: 8px; opacity: 0.7">Provisions</div>
   </div>
 
-  <div style="color: #09BAC8; font-size: 56px; font-weight: 700; flex-shrink: 0">→</div>
+  <div style="flex-shrink: 0; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 40 40" style="width: 64px; height: 64px" xmlns="http://www.w3.org/2000/svg"><path d="M 6 20 L 30 20 M 22 12 L 30 20 L 22 28" stroke="#09BAC8" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
 
   <div style="flex: 1; padding: 32px 24px; border: 3px solid #12172B; border-radius: 14px; text-align: center; box-shadow: 6px 6px 0 #09BAC8; background: #FFFFFF">
     <div style="font-size: 30px; font-weight: 700">Containers</div>
@@ -291,11 +291,11 @@ Software Engineer @ Microsoft
 # What Butane looks like
 
 ```yaml
-# Butane config header — declares this is a Flatcar config
+# Butane config header: declares this is a Flatcar config
 variant: flatcar
 version: 1.0.0
 
-# Drop in a systemd unit — Flatcar installs and starts it at first boot
+# Drop in a systemd unit. Flatcar installs and starts it at first boot
 systemd:
   units:
     - name: nginx.service
@@ -319,8 +319,6 @@ $ butane -o config.ign config.bu
 # Boot Flatcar in QEMU with it applied
 $ ./flatcar_production_qemu.sh -i config.ign
 ```
-
-One YAML file in. One running machine out.
 
 ---
 
@@ -346,7 +344,7 @@ No SSH. No manual `docker run`. The machine came up already serving.
 
 - **First boot** provisions from config. After that: the base OS doesn't change.
 - The OS is **read-only** and **dm-verity protected**.
-- **No package updates** — the entire OS updates as one unit.
+- **No package updates**: the entire OS updates as one unit.
 - Same config + same base image = **identical machine every time**.
 - **sysexts** for optional add-ons.
 
@@ -356,12 +354,56 @@ No SSH. No manual `docker run`. The machine came up already serving.
 
 # A/B Updates
 
-<img style="display: block; margin: 0 auto 16px; max-width: 100%; max-height: 280px; object-fit: contain" src="assets/diagrams/ab-updates.svg" alt="Partition A running, partition B staged, swapped on reboot">
-
-- Verified image staged to the **inactive partition**
-- **Reboot** activates the new OS
-- **Rollback** = reboot back to the old partition
-- **No intermediate states** — it works, or it rolls back
+<div class="ab-slide">
+<div class="ab-wrap">
+  <div class="ab-stack">
+    <div class="ab-card">
+      <div class="ab-title"><span class="ab-num">1</span>Fresh install</div>
+      <div class="ab-slots">
+        <div class="ab-slot active"><span class="ab-label">A</span><span class="ab-ver">1.2.3</span></div>
+        <div class="ab-slot passive"><span class="ab-label">B</span><span class="ab-ver">1.2.3</span></div>
+      </div>
+      <div class="ab-caption">Image ships both slots identical. Only true at first boot.</div>
+    </div>
+    <div class="ab-card">
+      <div class="ab-title"><span class="ab-num">2</span>Update staged</div>
+      <div class="ab-slots">
+        <div class="ab-slot active"><span class="ab-label">A</span><span class="ab-ver">1.2.3</span></div>
+        <div class="ab-slot staged"><span class="ab-label">B</span><span class="ab-ver">1.2.4</span></div>
+      </div>
+      <div class="ab-caption">New image written over the passive slot. No downtime.</div>
+    </div>
+    <div class="ab-card">
+      <div class="ab-title"><span class="ab-num">3</span>Reboot swaps</div>
+      <div class="ab-slots">
+        <div class="ab-slot passive"><span class="ab-label">A</span><span class="ab-ver">1.2.3</span></div>
+        <div class="ab-slot active"><span class="ab-label">B</span><span class="ab-ver">1.2.4</span></div>
+      </div>
+      <div class="ab-caption">Boot flips to B. If it fails, reboot back to A at 1.2.3.</div>
+    </div>
+    <div class="ab-card">
+      <div class="ab-title"><span class="ab-num">4</span>Steady running</div>
+      <div class="ab-slots">
+        <div class="ab-slot passive"><span class="ab-label">A</span><span class="ab-ver">1.2.3</span></div>
+        <div class="ab-slot active"><span class="ab-label">B</span><span class="ab-ver">1.2.4</span></div>
+      </div>
+      <div class="ab-caption">B live. A untouched: it's your rollback target.</div>
+    </div>
+    <div class="ab-card">
+      <div class="ab-title"><span class="ab-num">5</span>Next update</div>
+      <div class="ab-slots">
+        <div class="ab-slot staged"><span class="ab-label">A</span><span class="ab-ver">1.2.5</span></div>
+        <div class="ab-slot active"><span class="ab-label">B</span><span class="ab-ver">1.2.4</span></div>
+      </div>
+      <div class="ab-caption">1.2.5 overwrites the old 1.2.3 on A. Next reboot: A active, B rollback.</div>
+    </div>
+  </div>
+  <div class="ab-cycle-icon" aria-hidden="true">
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M 50 12 A 38 38 0 1 1 12 50" fill="none" stroke="#12172B" stroke-width="7" stroke-linecap="round"/><polygon points="12,32 3,52 21,52" fill="#12172B"/></svg>
+  </div>
+</div>
+<div class="ab-cycle">↺ The passive slot is <strong>never auto-synced</strong>. It's your rollback until the next update lands.</div>
+</div>
 
 ---
 
@@ -371,10 +413,10 @@ No SSH. No manual `docker run`. The machine came up already serving.
 
 <img style="display: block; margin: 0 auto 16px; max-width: 100%; max-height: 240px; object-fit: contain" src="assets/logos/external/other/flatcar-release-channels.png" alt="Alpha to Beta to Stable release flow">
 
-- **Alpha** — fully tested, may have incomplete features. Developers.
-- **Beta** — production-ready. Canary alongside stable.
-- **Stable** — widespread production. Promoted from beta.
-- **LTS** — slower-moving track for environments that need it.
+- **Alpha**: fully tested, may have incomplete features. Developers.
+- **Beta**: production-ready. Canary alongside stable.
+- **Stable**: widespread production. Promoted from beta.
+- **LTS**: slower-moving track for environments that need it.
 
 ---
 
@@ -406,14 +448,14 @@ No SSH. No manual `docker run`. The machine came up already serving.
 
 **Meetings**
 
-- **Office hours** — 2nd Tuesday, 2:30pm UTC
-- **Dev Sync** — 4th Tuesday, 2:30pm UTC
+- **Office hours**: 2nd Tuesday, 2:30pm UTC
+- **Dev Sync**: 4th Tuesday, 2:30pm UTC
 
 </div>
 
 </div>
 
-Jump in — first-time contributors welcome.
+Jump in. First-time contributors welcome.
 
 ---
 
