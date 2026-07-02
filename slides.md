@@ -421,7 +421,7 @@ No login. No post-boot setup. The machine came up already doing its job.
 
 # Demos!
 
-## github.com/John15321/SesjaLinuksowa
+## github.com/John15321/demos
 
 ---
 
