@@ -44,21 +44,12 @@ Makefile                   # top-level workflow
 .github/workflows/         # CI: builds PDF on push, releases on tag
 ```
 
-## Slide layouts
+## Slide layouts & utility classes
 
-Set via `<!-- _class: NAME -->` on the target slide:
-
-| Class            | Use case                                |
-| ---------------- | --------------------------------------- |
-| *(none)*         | White slide with navy title bar         |
-| `cover`          | Navy title slide with Flatcar icon      |
-| `lead`           | Full-bleed navy for big statements      |
-| `section`        | Section divider                         |
-| `closing`        | Thank-you slide + QR code + Discord CTA |
-| `agenda`         | Left rail + bullet list                 |
-| `sidebar`        | Left rail + free-form right pane        |
-| `sidebar whoami` | Bio variant of sidebar                  |
-| `quote`          | Blockquote slide                        |
+See [MANUAL.md](MANUAL.md) for the full authoring reference — slide
+layouts (`cover`, `sidebar`, `agenda`, etc.), utility classes
+(`img-*`, `pin-*`, `pane-*`, `row`, `cols-*`, `callout`, …) and both
+the HTML-class and markdown-alt-text ways to apply them.
 
 ## Releases
 

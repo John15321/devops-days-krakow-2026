@@ -76,7 +76,7 @@ section.cover {
   align-items: flex-start;
 }
 section.cover h1 {
-  background-image: url('assets/logos/icon/color/flatcar-icon-color.svg');
+  background-image: url('assets/logos/flatcar-logotype/icon/color/flatcar-icon-color.svg');
   background-repeat: no-repeat;
   background-position: left top;
   background-size: 110px auto;
@@ -95,7 +95,7 @@ section.cover h2 {
   padding: 0;
   color: var(--paper);
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.25;
   letter-spacing: 0;
   max-width: 60%;
@@ -143,10 +143,10 @@ section.closing {
   background-repeat: no-repeat, no-repeat;
   background-position:
     70px 50px,
-    right 70px top 60px;
+    right 60px top 50px;
   background-size:
     130px auto,
-    180px 180px;
+    260px 260px;
   padding: 70px;
   display: flex;
   flex-direction: column;
@@ -154,17 +154,27 @@ section.closing {
   align-items: flex-start;
 }
 /* Caption under the QR — CTA to the Flatcar Discord server. */
-section.closing::before {
-  content: 'Join our Discord!';
+section.closing p.closing-qr-caption {
   position: absolute;
-  top: 260px;
-  right: 70px;
-  width: 180px;
-  text-align: center;
+  top: 325px;
+  right: 60px;
+  width: 260px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   color: var(--accent-cyan);
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 22px;
+  font-weight: 700;
   letter-spacing: 0.02em;
+}
+section.closing p.closing-qr-caption img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  margin: 0;
 }
 section.closing h1 {
   margin: 0 0 24px 0;
@@ -197,6 +207,41 @@ section.closing p.closing-links img {
   object-fit: contain;
   vertical-align: middle;
   margin: 0;
+}
+section.closing p.closing-meetings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 32px;
+  margin: 6px 0 20px 0;
+  padding: 14px 20px;
+  border-left: 4px solid var(--accent-cyan);
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 0 6px 6px 0;
+  color: var(--paper);
+  font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Menlo, Consolas, monospace;
+  font-variant-numeric: tabular-nums;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+section.closing p.closing-meetings strong {
+  color: var(--accent-cyan);
+  font-weight: 700;
+}
+section.closing p.closing-cta {
+  margin: 0;
+  padding: 0;
+  max-width: 780px;
+  color: var(--paper);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+section.closing p.closing-cta strong {
+  color: var(--accent-cyan);
+  font-weight: 700;
+  opacity: 1;
 }
 
 /* ---------------- QUOTE ---------------- */
