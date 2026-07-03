@@ -19,3 +19,7 @@ npm-debug.log*
 # Environment overrides
 .env
 .env.local
+
+# Full-resolution image backups (kept locally, out of git)
+assets/photo/group_photos/original/
+assets/logos/external/other/original/

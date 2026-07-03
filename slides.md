@@ -84,9 +84,9 @@ Software Engineer @ Microsoft
   <img style="position: absolute; left: -4%; top: -2%; width: 42%; box-shadow: 0 10px 26px rgba(0,0,0,.32)" src="assets/photo/group_photos/image13.jpeg" alt="">
   <img style="position: absolute; left: 50%; top: -4%; width: 46%; box-shadow: 0 10px 26px rgba(0,0,0,.32)" src="assets/photo/group_photos/image16.jpeg" alt="">
   <img style="position: absolute; left: 22%; top: 4%;  width: 42%; box-shadow: 0 10px 26px rgba(0,0,0,.32); z-index: 2" src="assets/photo/group_photos/image14.jpeg" alt="">
-  <img style="position: absolute; left: 0%; top: 40%; width: 42%; box-shadow: 0 10px 26px rgba(0,0,0,.32); z-index: 2" src="assets/photo/group_photos/image17.jpeg" alt="">
+  <img style="position: absolute; left: 0%; top: 36%; width: 42%; box-shadow: 0 10px 26px rgba(0,0,0,.32); z-index: 2" src="assets/photo/group_photos/image17.jpeg" alt="">
   <img style="position: absolute; left: 58%; top: 22%; width: 42%; box-shadow: 0 10px 26px rgba(0,0,0,.32); z-index: 2" src="assets/photo/group_photos/image18.jpeg" alt="">
-  <img style="position: absolute; left: 18%; top: 22%; width: 52%; box-shadow: 0 14px 32px rgba(0,0,0,.38); z-index: 4" src="assets/photo/group_photos/image15.jpeg" alt="">
+  <img style="position: absolute; left: 18%; top: 28%; width: 52%; box-shadow: 0 14px 32px rgba(0,0,0,.38); z-index: 4" src="assets/photo/group_photos/image15.jpeg" alt="">
   <img style="position: absolute; left: 42%; top: 54%; width: 54%; box-shadow: 0 12px 28px rgba(0,0,0,.34); z-index: 3" src="assets/photo/group_photos/image19.jpeg" alt="">
 </div>
 
@@ -104,7 +104,7 @@ Software Engineer @ Microsoft
 <div class="logo-wall logo-wall-lg" style="grid-template-columns: repeat(4, 1fr); margin-top: 18px">
   <img src="assets/logos/external/gentoo-logo.png" alt="Gentoo">
   <img src="assets/logos/external/fedora-coreos-logo.svg" alt="Fedora CoreOS">
-  <img src="assets/logos/external/clouds/Systemd-logo.svg" alt="systemd">
+  <img src="assets/logos/external/clouds/Systemd-logo.svg" alt="systemd" style="transform: scale(1.35); transform-origin: center">
   <img src="assets/logos/external/linux-logo.png" alt="Linux">
 </div>
 
@@ -116,7 +116,7 @@ Software Engineer @ Microsoft
 
 <div class="logo-wall" style="grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(4, 1fr); gap: 20px 28px; height: 530px; margin-top: 8px">
   <img src="assets/logos/external/clouds/aws-logo.svg" alt="AWS">
-  <img src="assets/logos/external/clouds/azure.png" alt="Azure">
+  <img src="assets/logos/external/clouds/azure.svg" alt="Azure">
   <img src="assets/logos/external/clouds/gcp.png" alt="GCP">
   <img src="assets/logos/external/clouds/oracle-cloud-logo.png" alt="Oracle Cloud">
   <img src="assets/logos/external/clouds/openstack.png" alt="OpenStack">
@@ -256,28 +256,7 @@ Software Engineer @ Microsoft
 
 # Flatcar Workflow
 
-<div class="row row-center" style="gap: 24px; margin: auto 0; flex-wrap: nowrap; align-items: center">
-
-  <div style="flex: 1; padding: 32px 24px; border: 3px solid #12172B; border-radius: 14px; text-align: center; box-shadow: 6px 6px 0 #09BAC8; background: #FFFFFF">
-    <div style="font-size: 30px; font-weight: 700">Butane YAML</div>
-    <div style="font-size: 20px; margin-top: 8px; opacity: 0.7">Declarative config</div>
-  </div>
-
-  <div style="flex-shrink: 0; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 40 40" style="width: 64px; height: 64px" xmlns="http://www.w3.org/2000/svg"><path d="M 6 20 L 30 20 M 22 12 L 30 20 L 22 28" stroke="#09BAC8" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-
-  <div style="flex: 1; padding: 32px 24px; border: 3px solid #12172B; border-radius: 14px; text-align: center; box-shadow: 6px 6px 0 #09BAC8; background: #FFFFFF">
-    <div style="font-size: 26px; font-weight: 700">Cloud · VM · Bare Metal</div>
-    <div style="font-size: 20px; margin-top: 8px; opacity: 0.7">Provisions</div>
-  </div>
-
-  <div style="flex-shrink: 0; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 40 40" style="width: 64px; height: 64px" xmlns="http://www.w3.org/2000/svg"><path d="M 6 20 L 30 20 M 22 12 L 30 20 L 22 28" stroke="#09BAC8" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-
-  <div style="flex: 1; padding: 32px 24px; border: 3px solid #12172B; border-radius: 14px; text-align: center; box-shadow: 6px 6px 0 #09BAC8; background: #FFFFFF">
-    <div style="font-size: 30px; font-weight: 700">Containers</div>
-    <div style="font-size: 20px; margin-top: 8px; opacity: 0.7">Your runtime of choice</div>
-  </div>
-
-</div>
+<img style="display: block; margin: auto; max-width: 100%; max-height: 60%; object-fit: contain" src="assets/diagrams/flatcar-workflow.svg" alt="Flatcar workflow: Butane YAML provisions Cloud, VM, or Bare Metal running Containers">
 
 ---
 
@@ -414,6 +393,10 @@ No login. No post-boot setup. The machine came up already doing its job.
 - **Beta**: production-ready. Canary alongside stable.
 - **Stable**: widespread production. Promoted from beta.
 - **LTS**: slower-moving track for environments that need it.
+
+<div class="callout">
+Every commit runs the full test suite: unit, integration, and product tests across every supported cloud. By the time a version ships, even <strong>Alpha</strong>, it's been through hundreds of runs.
+</div>
 
 ---
 
