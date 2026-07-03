@@ -214,6 +214,14 @@ Software Engineer @ Microsoft
 
 ---
 
+<!-- _class: lead -->
+
+# You don't install Flatcar.
+
+## You provision it.
+
+---
+
 <!-- _class: sidebar -->
 
 # Provisioned, not Installed
@@ -227,7 +235,7 @@ Software Engineer @ Microsoft
 - Interactive choices during setup
 - Every machine ends up a little different
 - Manual updates, package churn, drift
-- The image and the config are one blob
+- No separation between OS and config
 
 </div>
 
@@ -243,14 +251,6 @@ Software Engineer @ Microsoft
 </div>
 
 </div>
-
----
-
-<!-- _class: lead -->
-
-# You don't install Flatcar.
-
-## You provision it.
 
 ---
 
