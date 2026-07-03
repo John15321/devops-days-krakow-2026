@@ -102,10 +102,10 @@ Software Engineer @ Microsoft
 - Co-founders of the **UAPI Group**, cross-distro SIG for image-based Linux
 
 <div class="logo-wall logo-wall-lg" style="grid-template-columns: repeat(4, 1fr); margin-top: 18px">
-  <img src="assets/logos/external/gentoo-logo.png" alt="Gentoo">
-  <img src="assets/logos/external/fedora-coreos-logo.svg" alt="Fedora CoreOS">
-  <img src="assets/logos/external/clouds/Systemd-logo.svg" alt="systemd" style="transform: scale(1.35); transform-origin: center">
-  <img src="assets/logos/external/linux-logo.png" alt="Linux">
+  <img src="assets/logos/external/gentoo-logo.png" alt="Gentoo" style="transform: translateY(90px); transform-origin: center">
+  <img src="assets/logos/external/fedora-coreos-logo.svg" alt="Fedora CoreOS" style="transform: translateY(20px); transform-origin: center">
+  <img src="assets/logos/external/clouds/Systemd-logo.svg" alt="systemd" style="transform: scale(1.35) translateY(100px); transform-origin: center">
+  <img src="assets/logos/external/linux-logo.png" alt="Linux" style="transform: translateY(30px); transform-origin: center">
 </div>
 
 ---

@@ -36,7 +36,12 @@ slides.md                  # slide content (Markdown)
 themes/
   flatcar.css              # theme entry point
   flatcar/{base,dark,sidebar}.css   # partials
-assets/                    # images, backgrounds, logos, photo, QR
+assets/
+  backgrounds/             # theme backgrounds (staircase, etc.)
+  diagrams/                # D2 sources + generated .svg diagrams
+  logos/                   # brand + third-party logos
+  photo/                   # individual + group photos
+  qr-code.png              # closing-slide QR
 scripts/                   # build / clean / gather-artifacts
 Containerfile              # Podman image (Marp CLI + bash + make)
 compose.yaml               # slides-builder service definition

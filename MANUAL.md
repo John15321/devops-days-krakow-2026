@@ -16,6 +16,7 @@ the Flatcar Marp theme. For build/setup, see [README.md](README.md).
     - [Slide-wide pins (`pin-*`)](#slide-wide-pins-pin-)
     - [Pane pins (`pane-*`, sidebar/agenda only)](#pane-pins-pane--sidebaragenda-only)
     - [Layout containers](#layout-containers)
+    - [Logo walls](#logo-walls)
     - [Callouts](#callouts)
   - [Font sizes \& overrides](#font-sizes--overrides)
   - [How the two syntaxes work](#how-the-two-syntaxes-work)
@@ -212,6 +213,30 @@ rail. Uses a `--rail-width` custom property (33% for `sidebar`, 25% for
   <img src="assets/logos/external/clouds/aws.png">
   <img src="assets/logos/external/clouds/azure.png">
   <img src="assets/logos/external/clouds/gcp.png">
+</div>
+```
+
+### Logo walls
+
+Uniform grid for logo groups. Each cell centers its image, caps the
+height, and applies a subtle drop-shadow so mixed light/dark logos read
+consistently against the white slide.
+
+| Class          | Cell max-height |
+| -------------- | --------------- |
+| `logo-wall`    | 140px           |
+| `logo-wall-lg` | 210px           |
+| `logo-wall-sm` | 60px            |
+
+Column count is not baked in — set it inline (or via a `<style scoped>`
+block) so the same rules serve 2/3/4-up walls:
+
+```markdown
+<div class="logo-wall logo-wall-lg" style="grid-template-columns: repeat(4, 1fr)">
+  <img src="assets/logos/external/clouds/aws.png">
+  <img src="assets/logos/external/clouds/azure.svg">
+  <img src="assets/logos/external/clouds/gcp.png">
+  <img src="assets/logos/external/clouds/openstack.svg">
 </div>
 ```
 
